@@ -114,7 +114,7 @@ body {
     border-radius: 50px;
     background: var(--dark-blue);
     cursor: pointer;
-    transition: background-color .3s linear;
+    transition: background-color .1s linear;
 }
 
 .feedback_rating_number:hover {
