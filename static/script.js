@@ -13,7 +13,7 @@ submitButton.addEventListener('click', function () {
             console.error("No option selected");
         }
         else {
-            window.location.href = 'thankyou.html'
+            window.location.href = 'https://mkandan1.github.io/frontend-mentor-rating-component/thankyou.html' + `?value=${checked.value}`
             ratingContainers.forEach((ratingContainer) => {
                 ratingContainer.style.border = '0px solid red';
             })
