@@ -13,7 +13,6 @@ submitButton.addEventListener('click', function () {
             console.error("No option selected");
         }
         else {
-            localStorage.setItem('ratedValue', checked.value);
             window.location.href = 'thankyou.html'
             ratingContainers.forEach((ratingContainer) => {
                 ratingContainer.style.border = '0px solid red';
