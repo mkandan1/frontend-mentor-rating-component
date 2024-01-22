@@ -1,5 +1,13 @@
 const rated = document.getElementById('rated');
 
-const value = localStorage.getItem('ratedValue');
+var value;
+
+if(localStorage.getItem('ratedValue')){
+    value = localStorage.getItem('ratedValue');
+}
+else {
+    let urlParams = new URLSearchParams(window.location.search);
+    value = urlParams.get('value');
+}
 
 rated.textContent = value;
